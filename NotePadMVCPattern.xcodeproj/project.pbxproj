@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		5D458C9B2888B5EF00C7201B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D458C9A2888B5EF00C7201B /* AppDelegate.swift */; };
 		5D458C9D2888B5EF00C7201B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D458C9C2888B5EF00C7201B /* SceneDelegate.swift */; };
-		5D458C9F2888B5EF00C7201B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D458C9E2888B5EF00C7201B /* ViewController.swift */; };
+		5D458C9F2888B5EF00C7201B /* NewNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D458C9E2888B5EF00C7201B /* NewNoteViewController.swift */; };
 		5D458CA22888B5EF00C7201B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D458CA02888B5EF00C7201B /* Main.storyboard */; };
 		5D458CA42888B5F100C7201B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D458CA32888B5F100C7201B /* Assets.xcassets */; };
 		5D458CA72888B5F100C7201B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D458CA52888B5F100C7201B /* LaunchScreen.storyboard */; };
+		5D458CAF2888C29C00C7201B /* NotesListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D458CAE2888C29C00C7201B /* NotesListTableViewController.swift */; };
+		5D458CB1288966BE00C7201B /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D458CB0288966BE00C7201B /* Note.swift */; };
+		5D458CB62889732000C7201B /* NoteDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D458CB52889732000C7201B /* NoteDetailsViewController.swift */; };
+		5D458CB92889807E00C7201B /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D458CB82889807E00C7201B /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5D458C972888B5EF00C7201B /* NotePadMVCPattern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotePadMVCPattern.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D458C9A2888B5EF00C7201B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D458C9C2888B5EF00C7201B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5D458C9E2888B5EF00C7201B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5D458C9E2888B5EF00C7201B /* NewNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNoteViewController.swift; sourceTree = "<group>"; };
 		5D458CA12888B5EF00C7201B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5D458CA32888B5F100C7201B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D458CA62888B5F100C7201B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D458CA82888B5F100C7201B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D458CAE2888C29C00C7201B /* NotesListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListTableViewController.swift; sourceTree = "<group>"; };
+		5D458CB0288966BE00C7201B /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		5D458CB52889732000C7201B /* NoteDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailsViewController.swift; sourceTree = "<group>"; };
+		5D458CB82889807E00C7201B /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,67 @@
 		5D458C992888B5EF00C7201B /* NotePadMVCPattern */ = {
 			isa = PBXGroup;
 			children = (
-				5D458C9A2888B5EF00C7201B /* AppDelegate.swift */,
-				5D458C9C2888B5EF00C7201B /* SceneDelegate.swift */,
-				5D458C9E2888B5EF00C7201B /* ViewController.swift */,
-				5D458CA02888B5EF00C7201B /* Main.storyboard */,
-				5D458CA32888B5F100C7201B /* Assets.xcassets */,
-				5D458CA52888B5F100C7201B /* LaunchScreen.storyboard */,
-				5D458CA82888B5F100C7201B /* Info.plist */,
+				5D458CB228896A7500C7201B /* App */,
+				5D458CBB288988AA00C7201B /* ViewControllers */,
+				5D458CBA2889884F00C7201B /* Models */,
+				5D458CB72889806500C7201B /* Services */,
+				5D458CB328896A8000C7201B /* Storyboards */,
+				5D458CB428896A8700C7201B /* Resorces */,
 			);
 			path = NotePadMVCPattern;
+			sourceTree = "<group>";
+		};
+		5D458CB228896A7500C7201B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5D458C9A2888B5EF00C7201B /* AppDelegate.swift */,
+				5D458C9C2888B5EF00C7201B /* SceneDelegate.swift */,
+				5D458CA82888B5F100C7201B /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5D458CB328896A8000C7201B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5D458CA02888B5EF00C7201B /* Main.storyboard */,
+				5D458CA52888B5F100C7201B /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		5D458CB428896A8700C7201B /* Resorces */ = {
+			isa = PBXGroup;
+			children = (
+				5D458CA32888B5F100C7201B /* Assets.xcassets */,
+			);
+			path = Resorces;
+			sourceTree = "<group>";
+		};
+		5D458CB72889806500C7201B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5D458CB82889807E00C7201B /* DataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5D458CBA2889884F00C7201B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5D458CB0288966BE00C7201B /* Note.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5D458CBB288988AA00C7201B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5D458CAE2888C29C00C7201B /* NotesListTableViewController.swift */,
+				5D458CB52889732000C7201B /* NoteDetailsViewController.swift */,
+				5D458C9E2888B5EF00C7201B /* NewNoteViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +198,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D458C9F2888B5EF00C7201B /* ViewController.swift in Sources */,
+				5D458CB1288966BE00C7201B /* Note.swift in Sources */,
+				5D458C9F2888B5EF00C7201B /* NewNoteViewController.swift in Sources */,
+				5D458CAF2888C29C00C7201B /* NotesListTableViewController.swift in Sources */,
+				5D458CB92889807E00C7201B /* DataManager.swift in Sources */,
 				5D458C9B2888B5EF00C7201B /* AppDelegate.swift in Sources */,
 				5D458C9D2888B5EF00C7201B /* SceneDelegate.swift in Sources */,
+				5D458CB62889732000C7201B /* NoteDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +353,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2Q8N9R5J2V;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = NotePadMVCPattern/Info.plist;
+				INFOPLIST_FILE = NotePadMVCPattern/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +381,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2Q8N9R5J2V;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = NotePadMVCPattern/Info.plist;
+				INFOPLIST_FILE = NotePadMVCPattern/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
