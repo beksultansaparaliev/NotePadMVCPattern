@@ -35,7 +35,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="PRo-xH-ujI">
-                        <barButtonItem key="rightBarButtonItem" title="Done" id="xC9-Dq-riV">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="xC9-Dq-riV">
                             <connections>
                                 <action selector="doneButtonTapped:" destination="VRE-8F-T5Z" id="EXT-YS-3wo"/>
                                 <segue destination="xBR-GX-XSW" kind="unwind" unwindAction="unwindSegueWithSegue:" id="mVb-be-EKh"/>
@@ -50,7 +50,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tuP-6D-l8O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="xBR-GX-XSW" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="4087" y="603"/>
+            <point key="canvasLocation" x="4143" y="891"/>
         </scene>
         <!--Notes-->
         <scene sceneID="Ezs-cw-RIt">
@@ -85,7 +85,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="VRE-8F-T5Z" kind="show" id="CJa-g7-aD5"/>
+                                    <segue destination="VRE-8F-T5Z" kind="show" identifier="currentNoteSegue" id="CJa-g7-aD5"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -97,7 +97,7 @@
                     <navigationItem key="navigationItem" title="Notes" id="cvb-Fj-HrI">
                         <barButtonItem key="rightBarButtonItem" image="square.and.pencil" catalog="system" id="ogg-5j-9pU">
                             <connections>
-                                <segue destination="aWD-Uv-U0G" kind="show" identifier="openNewNoteVC" id="wBO-9W-GQD"/>
+                                <segue destination="aWD-Uv-U0G" kind="show" identifier="newNoteSegue" id="wBO-9W-GQD"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -150,7 +150,7 @@
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="uZl-dW-Vfb">
                         <barButtonItem key="rightBarButtonItem" title="Done" id="dv4-sL-uTD">
                             <connections>
-                                <segue destination="Faj-CL-UGD" kind="unwind" unwindAction="unwindSegueWithSegue:" id="NRb-O1-bk9"/>
+                                <segue destination="Faj-CL-UGD" kind="unwind" unwindAction="unwindSegueWithSegue:" id="Fn0-U1-Ba7"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -162,7 +162,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0jU-ya-RK9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="Faj-CL-UGD" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="4820" y="212"/>
+            <point key="canvasLocation" x="4142" y="211"/>
         </scene>
     </scenes>
     <resources>

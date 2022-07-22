@@ -23,7 +23,10 @@ class NewNoteViewController: UIViewController {
     
 //    @IBAction func unwindSegue(segue: )
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let mainTVC = segue.destination as? NotesListTableViewController else { return }
+        mainTVC.notesList.append(Note(title: "New Note", body: body.text))
+    }
 
 
     
